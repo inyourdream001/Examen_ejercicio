@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      function contarSeleccionados()
+{
+  var cant=0;
+  if (document.getElementById('checkbox1').checked)
+  {
+    alert('Ha seleccionado Fútbol');
+    cant++;
+  }
+  if (document.getElementById('checkbox2').checked)
+  {
+    alert('Ha seleccionado Básket');
+    cant++;
+  }
+  if (document.getElementById('checkbox3').checked)
+  {
+    alert('Ha seleccionado Tenis');
+    cant++;
+  }
+  alert('Selecciono ' + cant + ' deportes');
+  alert()
+}
+    </script>
+    <form>
+  <input type="checkbox" id="checkbox1">Fútbol
+  <br>
+  <input type="checkbox" id="checkbox2">Básket
+  <br>
+  <input type="checkbox" id="checkbox3">Tenis
+  <br>
+  <input type="button" value="Mostrar" onClick="contarSeleccionados()">
+    </form>
+
+  </body>
+</html>
